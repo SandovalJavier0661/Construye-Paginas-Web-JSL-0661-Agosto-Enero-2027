@@ -18,17 +18,36 @@ esta actividad se delega a traves de un lenguaje que se ejecute en el servidor (
 ASP, ASP.NET, Node, etc.)
 <h2>Formularios con Radioboton</h2>
 <form action="" method="post">
+<!-- form action es para asignar un destino a donde se enviaran los datos
+method post es para que se envie la información de manera segura -->
 Ingresa tu nombre:
 <input type="text" name="nombre">
+<!-- input type text es para definir un campo de entrada de texto normal
+name es la variable en la que se guardara el nombre ingresado -->
 <br>
+<!-- br es para hacer un salto de linea -->
 Selecciona el maximo de estudios que tienes:
 <br>
+<!-- br es para hacer un salto de linea -->
 <input type="radio" name="estudios" value="1">Sin estudios <br>
+<!-- input type radio es para crear un boton de opcion unica
+name con el mismo valor agrupa las opciones para que solo se seleccione una
+value es el dato que se enviara al servidor si esta elegida -->
 <input type="radio" name="estudios" value="2">Primaria <br>
+<!-- input type radio crea el boton de opcion para Primaria
+value asigna el valor 2 a la variable estudios -->
 <input type="radio" name="estudios" value="3">Secundaria <br>
+<!-- input type radio crea el boton de opcion para Secundaria
+value asigna el valor 3 a la variable estudios -->
 <input type="radio" name="estudios" value="4">Preparatoria <br>
+<!-- input type radio crea el boton de opcion para Preparatoria
+value asigna el valor 4 a la variable estudios -->
 <input type="submit" value="enviar">
+<!-- type submit es para generar un boton de envio
+value le agrega el nombre dentro del boton en este caso "enviar" -->
 <input type="reset" value="borrar">
+<!-- type reset es para generar un boton que limpia todos los campos del formulario
+value le agrega el nombre dentro del boton en este caso "borrar" -->
 </form>
 </body>
 </html>
