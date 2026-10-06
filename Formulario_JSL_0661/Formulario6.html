@@ -18,24 +18,45 @@ esta actividad se delega a traves de un lenguaje que se ejecute en el servidor (
 ASP, ASP.NET, Node, etc.)
 <h2>Formularios con seleccion</h2>
 <form action="" method="post">
+<!-- form action es para asignar un destino a donde se enviaran los datos
+method post es para que se envie la información de manera segura -->
 Ingresa tu nombre:
 <input type="text" name="nombre">
+<!-- input type text es para definir un campo de entrada de texto normal
+name es la variable en la que se guardara el nombre ingresado -->
 
 <br>
+<!-- br es para hacer un salto de linea -->
 Selecciona tu pais:
 <select name="pais">
+<!-- select es para crear un menu o lista desplegable de opciones
+name es la variable en la que se guardara la opcion seleccionada -->
 <option value="1">Argentina</option>
+<!-- option define cada elemento dentro de la lista desplegable
+value es el valor que se enviara al servidor al elegir Argentina -->
 <option value="2">España</option>
+<!-- option define la opcion para España con su valor correspondiente -->
 <option value="3">Mexico</option>
+<!-- option define la opcion para Mexico con su valor correspondiente -->
 <option value="4">Guatemala</option>
+<!-- option define la opcion para Guatemala con su valor correspondiente -->
 <option value="5">Honduras</option>
+<!-- option define la opcion para Honduras con su valor correspondiente -->
 <option value="6">El Salvador</option>
+<!-- option define la opcion para El Salvador con su valor correspondiente -->
 <option value="7">Venezuela</option>
+<!-- option define la opcion para Venezuela con su valor correspondiente -->
 <option value="8">Colombia</option>
+<!-- option define la opcion para Colombia con su valor correspondiente -->
 </select>
 <br>
+<!-- br es para hacer un salto de linea -->
 <input type="submit" value="enviar">
+<!-- type submit es para generar un boton de envio
+value le agrega el nombre dentro del boton en este caso "enviar" -->
 <input type="reset" value="borrar">
+<!-- type reset es para generar un boton que limpia todos los campos del formulario
+value le agrega el nombre dentro del boton en este caso "borrar" -->
 </form>
 </body>
 </html>
