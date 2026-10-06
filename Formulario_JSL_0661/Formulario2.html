@@ -19,14 +19,24 @@ ASP, ASP.NET, Node, etc.)
 </p>
 <h2>Formulario para contraseñas</h2>
 <form action="" method="post">
-
+<!-- form action es para asignar un destino a donde se enviaran los datos
+method post es para que se envie la información de manera segura -->
 Ingresa tu usuario:
 <input type="text" name="usuario">
+<!-- input type text es para definir un campo de entrada de texto normal
+name es la variable en la que se guardara el usuario ingresado -->
 Ingresa tu contraseña:
 <input type="password" name="pass">
+<!-- input type password es para crear un campo que oculta los caracteres tipeados
+name es la variable con la que se identificara la contraseña -->
 <br>
+<!-- br es para hacer un salto de linea -->
 <input type="submit" value="enviar">
+<!-- type submit es para generar un boton de envio
+value le agrega el nombre dentro del boton en este caso "enviar" -->
 <input type="reset" value="borrar">
+<!-- type reset es para generar un boton que limpia todos los campos del formulario
+value le agrega el nombre dentro del boton en este caso "borrar" -->
 </form>
 </body>
 </html>
