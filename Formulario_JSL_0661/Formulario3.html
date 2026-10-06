@@ -18,17 +18,34 @@ esta actividad se delega a traves de un lenguaje que se ejecute en el servidor (
 ASP, ASP.NET, Node, etc.)
 <h2>Formulario con text area</h2>
 <form action="" method="post">
+<!-- form action es para asignar un destino a donde se enviaran los datos
+method post es para que se envie la información de manera segura -->
 Ingresa tu nombre:
 <input type="text" name="nombre">
+<!-- input type text es para definir un campo de entrada de texto normal
+name es la variable en la que se guardara el nombre ingresado -->
 <br>
+<!-- br es para hacer un salto de linea -->
 Ingresa tu correo:
 <input type="email" name="correo">
+<!-- input type email es para validar que el texto ingresado tenga formato de correo electronico
+name es la variable en la que se guardara el correo -->
 <br>
+<!-- br es para hacer un salto de linea -->
 Ingresa tus comentarios:
 <textarea name="comentarios" rows="1" cols="10"></textarea>
+<!-- textarea es para crear un campo de texto multilinea de mayor tamaño
+name es la variable donde se guardara el texto
+rows define el numero de filas visibles
+cols define el numero de columnas o ancho del campo -->
 <br>
+<!-- br es para hacer un salto de linea -->
 <input type="submit" value="enviar">
+<!-- type submit es para generar un boton de envio
+value le agrega el nombre dentro del boton en este caso "enviar" -->
 <input type="reset" value="borrar">
+<!-- type reset es para generar un boton que limpia todos los campos del formulario
+value le agrega el nombre dentro del boton en este caso "borrar" -->
 </form>
 </body>
 </html>
