@@ -18,28 +18,57 @@ esta actividad se delega a traves de un lenguaje que se ejecute en el servidor (
 ASP, ASP.NET, Node, etc.)
 <h2>Formularios con agrupamiento</h2>
 <form action="" method="post">
+<!-- form action es para asignar un destino a donde se enviaran los datos
+method post es para que se envie la información de manera segura -->
 <fieldset>
+<!-- fieldset es para agrupar campos relacionados dentro de un recuadro o seccion -->
 <legend>Datos personales</legend>
+<!-- legend es para asignar un titulo visible al grupo creado con fieldset -->
 Nombre y apellido:
 <input type="text" name="nombre_apellido"><br>
+<!-- input type text es para definir un campo de entrada de texto normal
+name es la variable en la que se guardara el nombre y apellido ingresado
+br hace un salto de linea -->
 Documento valido:
 <input type="file" name="documento"><br>
+<!-- input type file permite adjuntar un archivo desde el equipo
+name es la variable donde se enviara el documento cargado
+br hace un salto de linea -->
 Fecha de nacimiento:
 
 <input type="date" name="fecha_nacimiento">
+<!-- input type date es para crear un selector de fecha con calendario
+name es la variable en la que se guardara la fecha de nacimiento -->
 </fieldset>
+<!-- fieldset cierra la primera seccion de agrupamiento -->
 <fieldset>
+<!-- fieldset inicia una nueva seccion de agrupamiento de campos -->
 <legend>Datos de estudio:</legend>
+<!-- legend asigna el titulo a este segundo grupo de campos -->
 Nombre de la escuela:
 <input type="text" name="escuela"><br>
+<!-- input type text es para ingresar el nombre de la escuela
+name es la variable en la que se guardara la escuela ingresada
+br hace un salto de linea -->
 Certificado valido:
 <input type="file" name="certificado"><br>
+<!-- input type file permite adjuntar el archivo del certificado
+name es la variable donde se enviara el certificado cargado
+br hace un salto de linea -->
 Fecha de egreso:
 <input type="date" name="fecha_egreso">
+<!-- input type date abre el selector de fecha para ingresar la fecha de egreso
+name es la variable en la que se guardara la fecha seleccionada -->
 </fieldset>
+<!-- fieldset cierra la segunda seccion de agrupamiento -->
 <br>
+<!-- br es para hacer un salto de linea -->
 <button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i> </button>
+<!-- button type submit crea un boton de envio que puede contener texto e iconos dentro
+i class incluye el icono de papel de avion desde la libreria de Font Awesome -->
 <button type="reset">Borrar <i class="fa fa-trash"></i></button>
+<!-- button type reset crea un boton para limpiar los campos del formulario
+i class incluye el icono de basurero desde la libreria de Font Awesome -->
 </form>
 </body>
 </html>
