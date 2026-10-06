@@ -18,16 +18,31 @@ esta actividad se delega a traves de un lenguaje que se ejecute en el servidor (
 ASP, ASP.NET, Node, etc.)
 <h2>Formularios con checkbox</h2>
 <form action="" method="post">
+<!-- form action es para asignar un destino a donde se enviaran los datos
+method post es para que se envie la información de manera segura -->
 Ingresa tu nombre:
 <input type="text" name="nombre">
+<!-- input type text es para definir un campo de entrada de texto normal
+name es la variable en la que se guardara el nombre ingresado -->
 
 <br>
+<!-- br es para hacer un salto de linea -->
 Selecciona los lenguajes que conozcas:
 <br>
+<!-- br es para hacer un salto de linea -->
 <input type="checkbox" name="Java">Java <br>
+<!-- input type checkbox es para crear una casilla de verificacion de seleccion multiple
+name es la variable asignada para la casilla de Java
+br hace un salto de linea para separar las opciones -->
 <input type="checkbox" name="Python"> Python <br>
+<!-- input type checkbox crea la casilla para Python
+name guarda la variable identificadora de esta opcion -->
 <input type="checkbox" name="C#">C# <br>
+<!-- input type checkbox crea la casilla para C#
+name guarda la variable identificadora de esta opcion -->
 <input type="checkbox" name="Flutter"> Flutter <br>
+<!-- input type checkbox crea la casilla para Flutter
+name guarda la variable identificadora de esta opcion -->
 </form>
 </body>
 </html>
