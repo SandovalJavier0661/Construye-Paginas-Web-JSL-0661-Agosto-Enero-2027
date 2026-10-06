@@ -13,16 +13,25 @@ awesome/7.3.1/css/all.min.css">
 <body>
 <h1>Formularios</h1><!-- titulo -->
 <p>Un formulario permite al visitante cargar datos y que sean enviados al servidor.</p>
-<p>El HTML no tiene la responsabilidad de registrar los datos en el servidor,
+<p>El HTML no tiene la responsabilidad de registrar los datos en me el servidor,
 esta actividad se delega a traves de un lenguaje que se ejecute en el servidor (PHP,
 ASP, ASP.NET, Node, etc.)
 <h2>Formulario con botones</h2>
 <form action="" method="post">
+<!-- form action es para asignar un destino a donde se enviaran los datos
+method post es para que se envie la información de manera segura -->
 Ingresa tu nombre:
 <input type="text" name="nombre">
+<!-- input type text es para definir un campo de entrada de texto normal
+name es la variable en la que se guardara el nombre ingresado -->
 <br>
+<!-- br es para hacer un salto de linea -->
 <button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i> </button>
+<!-- button type submit crea un boton de envio que puede contener texto e iconos dentro
+i class incluye el icono de papel de avion desde la libreria de Font Awesome -->
 <button type="reset">Borrar <i class="fa fa-trash"></i></button>
+<!-- button type reset crea un boton para limpiar los campos del formulario
+i class incluye el icono de basurero desde la libreria de Font Awesome -->
 </form>
 </body>
 </html>
